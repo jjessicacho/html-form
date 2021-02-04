@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="homework06/css/style.css"/>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>COMP1850 Homework 6 - An HTML Form</h1>
+    </header>
+
+    <main>
+
+        <form action="http://bcitcomp.ca/comp1850_homework06.php"
+              method="post"
+              class="basic_form">
+
+        <div class="first_name">
+            <label for="firstname">First Name:</label>
+            <input type="text"
+                   name="firstname"
+                   id="firstname" 
+                   placeholder=" first name"
+                   required ="required" />
+        </div>
+       
+        <div class="last_name">
+            <label for="lastname">Last Name:</label>
+            <input type="text"
+                   name="lastname"
+                   id="lastname" 
+                   placeholder=" last name"
+                   required ="required" />
+        </div>
+       
+        <fieldset class="prefix">
+            <legend>Choose:</legend>
+            <span>
+                <input type="radio"
+                        id="mr"
+                        name="prefix"
+                        value="mr" />
+                <label for="mr">Mr</label>
+            </span>
+        
+            <span>
+                <input type="radio"
+                        id="mrs"
+                        name="prefix"
+                        value="mrs" />
+                <label for="mrs">Mrs</label>
+            </span>
+          
+            <span>
+                <input type="radio"
+                        id="ms"
+                        name="prefix"
+                        value="ms" />
+                <label for="ms">Ms</label>
+            </span>
+           
+        </fieldset>
+          
+        <div class="student_number">
+            <label for="studentnumber">Student Number:</label>
+            <input type="text"
+                   name="studentnumber"
+                   id="studentnumber" 
+                   placeholder=" student number"
+                   required ="required" />
+        </div>
+       
+        <div class="courses">
+            <label for="courses">Which class are you considering registering for:</label>
+            <select name="courses" 
+                    id="courses">
+        
+                  <option value="comp1850">COMP1850</option>
+                  <option value="comp1950">COMP1950</option>
+                  <option value="comp1490">COMP1490</option>
+                  <option value="comp1630">COMP1630</option>
+                  <option value="comp2015">COMP2015</option>
+                  <option value="comp3015">COMP3015</option>
+            </select>
+        </div>
+       
+        <div class="comments">
+            <p>Write a comment:</p>
+            <textarea name="comments"
+                      placeholder=" Write a comment..."
+                      id="comments"></textarea>
+        </div>
+    
+        <div id="submit_button">
+            <input type="submit"
+                   value="Submit" />
+        </div>
+
+        </form>
+
+    </main>
+    
+    <footer>
+        <span>Jungmin (Jessica) Cho COMP 1850</span>
+    </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+@import url("reset.css");
+
+html {
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #5A6351;
+    color: #090909;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #174038;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 30px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+label {
+    padding: 3px 0;
+}
+
+input {
+    padding: 5px 0;
+    margin-bottom: 15px;
+}
+
+textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+}
+
+p {
+    margin-top: 15px;
+    padding: 5px 0;
+}
+
+label, p, legend {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #174038;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+span {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+/* 
+------------
+ Class Selectors
+------------
+*/
+.first_name,
+.last_name,
+.prefix,
+.student_number,
+.courses,
+.comments {
+    padding: 10px;
+}
+
+.prefix input {
+    visibility: hidden;
+}
+
+.prefix label {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.prefix label:before {
+    content:"";
+    background: grey;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left:-25px;
+}
+
+.prefix input:checked ~ label:before {
+    background-color: white;
+    border: 6px solid #00611C;
+}
+
+/* 
+------------
+ Id Selectors
+------------
+*/
+#wrapper {
+    background-color: white;
+    width: 90%;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto;  
+}
+
+#submit_button {
+    background-color: #7FFF00;
+    width: 100px;
+    border-radius: 90px;
+    border-color: #3D5229;
+    box-shadow: 1px 1px 2px grey;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit_button input {
+    color: #0D4F8B;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    outline: none;
+}
+
+#submit_button:hover {
+    filter: brightness(1.5);
+}
+
+#submit_button:active {
+    transform: scale(.85);
+}
